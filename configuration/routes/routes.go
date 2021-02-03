@@ -33,5 +33,4 @@ func InitializeRoutes() {
 	r.HandleFunc("/customer/{id}", controller.CustomerUpdateProcess).Methods("PUT")
 	r.HandleFunc("/error", controller.CustomerServerError).Methods("GET")
 	r.NotFoundHandler = http.HandlerFunc(controller.NotFound)
-	// r.HandleFunc("/customer-success", controller.CustomerSuccessProcess).Methods("GET")
 }

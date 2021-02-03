@@ -47,12 +47,6 @@ func CustomerDeleteProcess(w http.ResponseWriter, r *http.Request) {
 	service.DeleteOneCustomer(r)
 }
 
-//CustomerSuccessProcess is...
-func CustomerSuccessProcess(w http.ResponseWriter, r *http.Request) {
-	tpl := common.GetTemplate()
-	tpl.ExecuteTemplate(w, "success.html", struct{ Data string }{"Data Processed"})
-}
-
 //CustomerServerError is...
 func CustomerServerError(w http.ResponseWriter, r *http.Request) {
 	tpl := common.GetTemplate()

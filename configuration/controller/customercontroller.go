@@ -38,7 +38,7 @@ func CustomerDisplaypageProcess(w http.ResponseWriter, r *http.Request) {
 
 	if flagdelete {
 		flagdelete = false
-		message = "Data is deleted successfully"
+		message = "Data is Deleted successfully"
 		messageflag = true
 	}
 	tpl.ExecuteTemplate(w, "display.html", struct {
